@@ -11,7 +11,6 @@ import logo_javascript from './images/logo_javascript.svg';
 import logo_spring from './images/logo_spring.svg';
 import logo_java from './images/logo_java.svg';
 
-
 const arrImg = [logo_html, logo_css3, logo_github_mark_white, logo_javascript, logo_react, logo_java, logo_spring];
 const arrDescription = [
   "HTML is a Hypertext Markup Language for text. Needed to place elements on a web page: text, pictures, tables and videos, etc.",
@@ -25,34 +24,9 @@ const arrDescription = [
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
-
 root.render(
   <App />
 );
-
-// MyLikeImage();
-
-// function MyLikeImage() {
-//   let index = 0;
-//   let timeId;
-
-//   timeId && clearInterval(timeId);
-
-//   timeId = setInterval(() => {
-//     index = (index + 1) % arrImg.length;
-//     // return arrImg[index];
-//     // console.log(arrImg[index]);
-//     // console.log(index);
-
-//     root.render(
-//       <App name={arrImg[index]} />
-//     )
-
-
-//   }, 2000);
-
-// }
 
 document.querySelector('.container').addEventListener("click", e => {
   if (e.target.className !== "menu") {
@@ -60,7 +34,6 @@ document.querySelector('.container').addEventListener("click", e => {
   }
   const str = e.target.id;
   const index = Number(str.match(/\d+/)[0]);
-
   root.render(
     <App name={arrImg[index]} description={arrDescription[index]} />
   );
