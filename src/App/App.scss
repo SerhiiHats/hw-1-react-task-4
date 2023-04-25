@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  max-width: 75vh;
+  max-width: 340px;
   margin: auto;
 }
 
@@ -18,14 +18,18 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 50vh;
+  min-height: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
   padding: 5px;
+
+  img {
+    width: 180px;
+  }
 }
 
 .App-link {
